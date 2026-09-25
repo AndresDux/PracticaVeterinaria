@@ -1,10 +1,14 @@
 package app.domain;
 
 public class Cita {
+    //ATRIBUTOS:
     private int idCita;
     private String motivo;  //vacunación, control, etc.
+    //Atributos para relación de clases:
     private Veterinario veterinario;
     private Animal animal;
+
+    //Estado (Viene del enum)
     private EstadoCita estadoCita;
 
     //CONSTRUCTOR:
@@ -13,6 +17,7 @@ public class Cita {
         this.motivo = motivo;
         this.veterinario = veterinario;
         this.animal = animal;
+//        this.estadoCita = estadoCita;
         this.estadoCita = EstadoCita.PROGRAMADA; //Por defecto está PROGRAMADA.
     }
 
