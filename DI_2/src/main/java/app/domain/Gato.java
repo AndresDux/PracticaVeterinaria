@@ -4,8 +4,8 @@ public class Gato extends Animal {
     private String color;
 
     //CONSTRUCTOR:
-    public Gato(String nombre, int edad, String color) {
-        super(nombre, edad);
+    public Gato(int id, String nombre, int edad, String color) {
+        super(id, nombre, edad);
         this.color = color;
     }
 
@@ -13,4 +13,9 @@ public class Gato extends Animal {
     public String getColor() {
         return color;
     }
+
+//    @Override
+//    public int edad() {
+//        return 0;
+//    }
 }

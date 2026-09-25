@@ -2,12 +2,12 @@ package app.domain;
 
 public class Veterinario {
     //ATRIBUTOS:
-    private int id;
+    private int idVeterinario;
     private String nombre;
 
     //CONSTRUCTOR:
-    public Veterinario(int id, String nombre) {
-        this.id = id;
+    public Veterinario(int idVeterinario, String nombre) {
+        this.idVeterinario = idVeterinario;
         this.nombre = nombre;
     }
 
@@ -17,7 +17,7 @@ public class Veterinario {
         return nombre;
     }
 
-    public int getId() {
-        return id;
+    public int getIdVeterinario() {
+        return idVeterinario;
     }
 }

@@ -38,6 +38,10 @@ public class Cita {
         return animal;
     }
 
+    public EstadoCita getEstadoCita() {
+        return estadoCita;
+    }
+
     //SETTERS:
     public void setIdCita(int idCita) {
         this.idCita = idCita;

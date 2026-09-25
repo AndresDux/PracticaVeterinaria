@@ -4,8 +4,8 @@ public class Perro extends Animal {
     private final String raza;
 
     //CONSTRUCTOR:
-    public Perro(String nombre, int edad, String raza) {
-        super(nombre, edad);
+    public Perro(int id, String nombre, int edad, String raza) {
+        super(id, nombre, edad);
         this.raza = raza;
     }
 
@@ -13,4 +13,9 @@ public class Perro extends Animal {
     public String getRaza() {
         return raza;
     }
+
+//    @Override
+//    public int edad() {
+//        return 0;
+//    }
 }

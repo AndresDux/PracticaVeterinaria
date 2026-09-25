@@ -1,17 +1,21 @@
 package app.domain;
 
-public class Animal {
+public abstract class Animal {  //todo: CLASE ABSTRACTA
+    private int idAnimal;
     private String nombre;
     private int edad;
 
 
     //CONSTRUCTOR:
-    public Animal(String nombre, int edad) {
+    public Animal(int idAnimal, String nombre, int edad) {
+        this.idAnimal = idAnimal;
         this.nombre = nombre;
         this.edad = edad;
     }
 
     //GETTERS:
+    public int getIdAnimal() {return idAnimal;}
+
     public String getNombre() {
         return nombre;
     }
@@ -21,7 +25,7 @@ public class Animal {
     }
 
 
-
+//    public abstract int edad();
 
 
 
